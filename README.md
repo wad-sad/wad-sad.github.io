@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://wad-sad.github.io">
-    <button>————————————————————————:sunny: 点我跳转！:sunny:————————————————————————</button>
+    <button>:sunny: 点我跳转！:sunny:</button>
   </a>
 </div>
 <img
