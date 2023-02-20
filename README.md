@@ -1,6 +1,6 @@
 # SimpleHomePage
 
-<div aling="center">
+<div align="center">
 <a href="https://wad-sad.github.io">
     <button>点我跳转！</button>
 </a>
