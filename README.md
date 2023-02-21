@@ -26,7 +26,9 @@
     HFIProgramming Github
     </a>
     </li>
-    <li>:full_moon:……</li>
+    <li>:full_moon:<a href="https://aplayer.js.org/#/">
+    Aplayer
+    </li>
     <li>:waning_gibbous_moon:……</li>
     <li>:last_quarter_moon:……</li>
     <li>:waning_crescent_moon:……</li>
