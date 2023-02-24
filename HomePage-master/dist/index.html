@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
     <title>Home</title>
     <meta charset="utf-8" />
     <meta
@@ -17,54 +12,71 @@
     <meta name="theme-color" content="#222325" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#222325" />
     <meta name="msapplication-navbutton-color" content="#222325" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Tomotoes/font/font.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <meta http-equiv="x-dns-prefetch-control" content="on" />
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link rel="prefetch" href="https://cdn.jsdelivr.net/" />
+    <meta name="description" content="Author:wad-sad,Category:Personal Blog" />
+    <link rel="prefetch" href="https://cdn.jsdelivr.net/" />
     <link rel="shortcut icon" href="Rainbow.svg" type="image/x-icon" />
   </head>
-
-  <body>
-    <footer>
-      <!-- aplayer -->
-      <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
-      <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
-    </footer>
-    <!-- <main> -->
-    <div
-      style="z-index: 999"
-      id="aplayer"
-      class="aplayer"
-      data-order="random"
-      data-id="2137987910"
-      data-server="netease"
-      data-type="playlist"
-      data-fixed="true"
-      data-autoplay="true"
-      data-volume="0.6"
-    ></div>
+</html>
+<footer>
+  <!-- aplayer -->
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
+</footer>
+<body>
+  <main style="z-index: 999">
     <div class="content content-intro">
       <div class="content-inner">
         <canvas id="background"></canvas>
         <div class="wrap fade">
           <h2 class="content-title">wad-sad</h2>
-          <h3
-            class="content-subtitle"
-            original-content="Front back left right end engineer"
-          ></h3>
+          <span class="text-gradient"> Front back left right end engineer</span>
+
+          <h2 id="signature" data-translate="signature"></h2>
         </div>
       </div>
       <div class="shape-wrap">
-        <svg class="shape"></svg>
+        <svg
+          class="shape"
+          width="100%"
+          height="100vh"
+          preserveAspectRatio="none"
+          viewBox="0 0 1440 800"
+          xmlns:pathdata="http://www.codrops.com/"
+        ></svg>
       </div>
+      <div
+        id="aplayer"
+        class="aplayer"
+        data-order="random"
+        data-id="2137987910"
+        data-server="netease"
+        data-type="playlist"
+        data-fixed="true"
+        data-autoplay="true"
+        data-volume="0.6"
+      ></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
     <script>
       window.$ = (selector) => document.querySelector(selector);
       const getOriginalContent = (selector) =>
         $(selector).getAttribute("original-content");
-      window.subtitle = getOriginalContent(".content-subtitle");
+      // window.subtitle = getOriginalContent(".content-subtitle");
+      window.signature = getOriginalContent("#signature");
       window.config = {
         SIM_RESOLUTION: 128,
         DYE_RESOLUTION: 1024,
@@ -95,6 +107,7 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/background.js"></script>
-    <!-- </main> -->
-  </body>
-</html>
+    <script src="https://cdn.jsdelivr.net/gh/Tomotoes/js/log.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  </main>
+</body>
